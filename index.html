@@ -1,72 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--==========FAVICON=========== -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
 
     <!--==========REMIX ICON=========== -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
     <!--==========GOOGLE FONTS=========== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
     <!--==========CSS=========== -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 
-    
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--=============== HEADER ===============-->
     <header class="header" id="header">
-        <nav class="nav container">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Shop.</a>
 
-            <a href="#" class="nav__logo">Shop.</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="ri-home-line"></i>
+                <span>Home</span>
+              </a>
+            </li>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#new" class="nav__link">
+                <i class="ri-price-tag-3-line"></i>
+                <span>New</span>
+              </a>
+            </li>
 
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link">
-                            <i class="ri-home-line"></i>
-                            <span>Home</span>
-                        </a>
-                    </li>
+            <li class="nav__item">
+              <a href="#collection" class="nav__link">
+                <i class="ri-compass-line"></i>
+                <span>Collerction</span>
+              </a>
+            </li>
 
-                    <li class="nav__item">
-                        <a href="#new" class="nav__link">
-                            <i class="ri-price-tag-3-line"></i>
-                            <span>New</span>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#collection" class="nav__link">
-                            <i class="ri-compass-line"></i>
-                            <span>Collerction</span>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#products" class="nav__link">
-                            <i class="ri-t-shirt-line"></i>
-                            <span>Products</span>
-                        </a>
-                    </li>
-                </ul>
-                <!-- Theme change button -->
-                <i class="ri-moon-line"></i>
-            </div>
-        </nav>
+            <li class="nav__item">
+              <a href="#products" class="nav__link">
+                <i class="ri-t-shirt-line"></i>
+                <span>Products</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Theme change button -->
+        <i class="ri-moon-line"></i>
+      </nav>
     </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+            <div class="home__data">
+                <h1 class="home__title">
+                    New Clothing <br>
+                    Collection
+                </h1>
+                <p class="home__description">
+                    The new collection of clothing from <br>
+                    the best brands this year.
+                </p>
+                <a href="#new" class="button__link">
+                    Explore <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+            <div class="home__images">
+                <img src="assets/img/home1.png" alt="home image">
+                <img src="assets/img/home2.png" alt="home image">
+            </div>
+        </div>
+
+      </section>
+
+      <!--==================== NEW ====================-->
+      <section class="new section" id="new"></section>
+
+      <!--==================== COLLECTION ====================-->
+      <section class="collection section" id="collection"></section>
+
+      <!--==================== PRODUCTS ====================-->
+      <section class="products section" id="products"></section>
+
+      <!--==================== BRANDS ====================-->
+      <section class="brand section"></section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section"></footer>
+
+    <!--========== SCROLL UP ==========-->
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src=""></script>
+
 
     <!--=============== MAIN JS ===============-->
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
