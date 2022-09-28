@@ -24,3 +24,4 @@ let swiperProducts = new Swiper(".products__container", {
         },
     }
 });
+

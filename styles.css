@@ -400,11 +400,30 @@ img {
   display: flex;
   column-gap:.5rem;
 }
+.footer__social-link{
+  display: inline-block;
+  color:var(--title-color);
+  padding:.4rem;
+  background:var(--container-color);
+  font-size:1.25rem;
+  transition: background-color .3s;
+}
+.footer__social-link:hover{
+  background-color: var(--bg-color-light);
+}
 .footer__info{
   margin-top: 6rem;
   padding-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: .75rem;
 }
-
+.footer__copy,
+.footer__privacy{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
 /*=============== SCROLL BAR ===============*/
 
 /*=============== SCROLL UP ===============*/
